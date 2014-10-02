@@ -1,0 +1,282 @@
+html {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+body {
+    margin:0;
+    background:#000;
+    max-height:100%;
+    max-width:100%;
+}
+.wall {
+    position:absolute;
+    background:#fff;
+    opacity:0.2;
+    display:none; 
+    /*display:table; */
+}
+.wall span {
+    display:table-cell;
+    vertical-align:middle;
+    width:100%;
+    color:#000;
+    font-weight:bold;
+    text-align:center;
+}
+.box1 {
+    width:60px;
+    height:40px;
+    left: 44px;
+    top:42px;
+}
+.box2 {
+    width:85px;
+    height:40px;
+    left:144px;
+    top:42px;
+}
+.box3 {
+    width:20px;
+    height:80px;
+    left: 269px;
+    top:2px;
+}
+.box4 {
+    width:85px;
+    height:40px;
+    left: 330px;
+    top:42px;
+}
+.box5 {
+    width:60px;
+    height:40px;
+    left: 454px;
+    top:42px;
+}
+.box6 {
+    width:60px;
+    height:20px;
+    left: 44px;
+    top:122px;
+}
+.box7 {
+    width:20px;
+    height:139px;
+    left:144px;
+    top:122px;
+}
+.box8 {
+    width:65px;
+    height:20px;
+    left:164px;
+    top:182px;
+}
+.box9 {
+    width:148px;
+    height:20px;
+    left:204px;
+    top:122px;
+}
+.box10 {
+    width:20px;
+    height:60px;
+    left:269px;
+    top:142px;
+}
+.box11 {
+    width:65px;
+    height:20px;
+    left:329px;
+    top:182px;
+}
+.box12 {
+    width:20px;
+    height:139px;
+    left:394px;
+    top:122px;
+}
+.box13 {
+    width:60px;
+    height:20px;
+    left:454px;
+    top:122px;
+}
+.box14 {
+    width:104px;
+    height:80px;
+    left:0px;
+    top:182px;
+}
+.box15 {
+    width:104px;
+    height:80px;
+    left:454px;
+    top:182px;
+}
+.box16 {
+    width:150px;
+    height:80px;
+    left:204px;
+    top:242px;
+}
+.box17 {
+    width:104px;
+    height:80px;
+    left:0px;
+    top:302px;
+}
+.box18 {
+    width:20px;
+    height:80px;
+    left:144px;
+    top:302px;
+}
+.box19 {
+    width:150px;
+    height:20px;
+    left:204px;
+    top:362px;
+}
+.box20 {
+    width:20px;
+    height:80px;
+    left:394px;
+    top:302px;
+}
+.box21 {
+    width:104px;
+    height:80px;
+    left:454px;
+    top:302px;
+}
+.box22 {
+    width:60px;
+    height:20px;
+    left: 44px;
+    top:422px;
+}
+.box23 {
+    width:85px;
+    height:20px;
+    left:144px;
+    top:422px;
+}
+.box24 {
+    width:20px;
+    height:60px;
+    left:269px;
+    top:382px;
+}
+.box25 {
+    width:85px;
+    height:20px;
+    left:329px;
+    top:422px;
+}
+.box26 {
+    width:60px;
+    height:20px;
+    left:454px;
+    top:422px;
+}
+.box27 {
+    width:44px;
+    height:20px;
+    left:0px;
+    top:482px;
+}
+.box28 {
+    width:20px;
+    height:60px;
+    left: 84px;
+    top:442px;
+}
+.box29 {
+    width:20px;
+    height:60px;
+    left:144px;
+    top:482px;
+}
+.box30 {
+    width:148px;
+    height:20px;
+    left:204px;
+    top:482px;
+}
+.box31 {
+    width:20px;
+    height:60px;
+    left:394px;
+    top:482px;
+}
+.box32 {
+    width:20px;
+    height:60px;
+    left: 454px;
+    top:442px;
+}
+.box33 {
+    width:44px;
+    height:20px;
+    left:514px;
+    top:482px;
+}
+.box34 {
+    width:185px;
+    height:20px;
+    left: 44px;
+    top:542px;
+}
+.box35 {
+    width:20px;
+    height:60px;
+    left:269px;
+    top:502px;
+}
+.box36 {
+    width:185px;
+    height:20px;
+    left: 329px;
+    top:542px;
+}
+#playmap {
+    margin:100px auto 0;
+    width:558px;
+    height:604px;
+    background:#000 url(images/pacmap.jpg) no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+#pacman {
+    top:2px;
+    left:4px;
+    width:40px;
+    height:40px;
+    display:block;
+    position:absolute;
+}
+#pacman.closed {
+    background:#ffff1c;
+    border-radius:40px;
+}
+#pacman.right {
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+}
+#pacman.down {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+#pacman.left {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+#pacman.up {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
