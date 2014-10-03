@@ -13,8 +13,8 @@ body {
     position:absolute;
     background:#fff;
     opacity:0.2;
+    display:table;
     display:none; 
-    /*display:table; */
 }
 .wall span {
     display:table-cell;
@@ -249,8 +249,8 @@ body {
     overflow:hidden;
 }
 #pacman {
-    top:2px;
-    left:4px;
+    top:442px;
+    left:259px;
     width:40px;
     height:40px;
     display:block;

@@ -127,8 +127,8 @@ function Character(name,element) {
 	this.character = element;
 	this.direction = 'right';
 	this.offset = 40;
-	this.xPos = playmap.leftBound;
-	this.yPos = playmap.topBound;
+	this.xPos = 259;
+	this.yPos = 442;
 	this.fps = 30;
 	this.speedStep = 5;
 	this.moveMouthSpeed = this.fps / 5;
