@@ -7,7 +7,7 @@ var playmap = new function() {
 	this.rightBound = this.map.clientWidth - this.leftBound;
 	this.bottomBound = this.map.clientHeight - this.topBound;
 	this.warpTop = 262;
-	this.warpBottom = 302
+	this.warpBottom = 302;
 	this.vertWallCoords = [
 		// xWall, xTop, xBottom
 		[this.leftBound, this.topBound, this.warpTop], // 4, 2, 262
