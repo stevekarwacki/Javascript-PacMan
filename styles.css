@@ -9,6 +9,55 @@ body {
     max-height:100%;
     max-width:100%;
 }
+#playmap {
+    margin:100px auto 0;
+    width:558px;
+    height:604px;
+    background:#000 url(images/pacmap.jpg) no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+#pacman {
+    top:442px;
+    left:259px;
+    width:40px;
+    height:40px;
+    display:block;
+    position:absolute;
+    z-index: 10;
+}
+#pacman.closed {
+    background:#ffff1c;
+    border-radius:40px;
+}
+#pacman.right {
+    transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+}
+#pacman.down {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+#pacman.left {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+#pacman.up {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+.pacfood {
+    position:absolute;
+    width:5px;
+    height:5px;
+    border-radius:5px;
+    background:#fff;
+    z-index: 1;
+}
 .wall {
     position:absolute;
     background:#fff;
@@ -239,44 +288,4 @@ body {
     height:20px;
     left: 329px;
     top:542px;
-}
-#playmap {
-    margin:100px auto 0;
-    width:558px;
-    height:604px;
-    background:#000 url(images/pacmap.jpg) no-repeat;
-    position:relative;
-    overflow:hidden;
-}
-#pacman {
-    top:442px;
-    left:259px;
-    width:40px;
-    height:40px;
-    display:block;
-    position:absolute;
-}
-#pacman.closed {
-    background:#ffff1c;
-    border-radius:40px;
-}
-#pacman.right {
-    transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-}
-#pacman.down {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-}
-#pacman.left {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-}
-#pacman.up {
-    transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
 }
